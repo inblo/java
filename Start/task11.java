@@ -2,6 +2,7 @@ package Start;
 //Arrays
 public class task11 {
     public static void main(String[] args) {
+        @SuppressWarnings("unused")
         int num = 10;
         int[] nums = new int[5];
         for(int i = 0; i < nums.length; i++){
