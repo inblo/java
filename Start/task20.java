@@ -7,7 +7,9 @@ public class task20 {
     }
 }
 class Human{
+    @SuppressWarnings("unused")
     private String name;
+    @SuppressWarnings("unused")
     private int age;
 
     public Human(){
