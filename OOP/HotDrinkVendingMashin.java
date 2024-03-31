@@ -2,11 +2,11 @@ package OOP;
 
 import java.util.List;
 
-public class BottleOfWaterVendingMashin implements VendingMashine {
+public class HotDrinkVendingMashin implements VendingMashine{
     private List<Product> productList;
     
     @Override
-    public void initProduct(List<Product> productList) {
+    public void initProduct(List<Product> productList){
         this.productList = productList;
     }
     @Override
@@ -17,15 +17,20 @@ public class BottleOfWaterVendingMashin implements VendingMashine {
             }
         }
         return null;
+
     }
 
-    public Product getProduct(String name, int volume){
+    public Product getProduct(String name, int volume, int temperature){
         for (Product product : productList) {
             if (product.getName().equals(name) && 
-            ((BottleOfWater)product).getVolume() == volume) {
+            ((HotDrink)product).getTemperature() == temperature) {
                 return product;
             }
-        }
-        return null;
+            else if (product.getName().equals(name) && 
+            ((HotDrink)product).getVolume() == volume) {
+                return product;
+            }
+         }
+         return null;
     }
 }

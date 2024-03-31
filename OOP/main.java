@@ -12,8 +12,12 @@ public class main {
         productList.add(new BottleOfWater(194, "eweee", 24));
         BottleOfWaterVendingMashin vendingMashin = new BottleOfWaterVendingMashin();
         vendingMashin.initProduct(productList);
+        productList.add(new HotDrink(211, "tea",125,89));
+        productList.add(new HotDrink(250, "coffee", 100,70));
+        HotDrinkVendingMashin vendingMashin2 = new HotDrinkVendingMashin();
+        vendingMashin2.initProduct(productList);
         System.out.println(vendingMashin.getProduct("eweer", 100));
-        System.out.println(vendingMashin.getProduct("eweer"));
+        System.out.println(vendingMashin2.getProduct("coffee", 100, 70));
     }
 }
  

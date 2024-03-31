@@ -15,11 +15,8 @@ public class BottleOfWater extends Product {
 
     @Override
     public String toString(){
-        return "BotteOfWatter{" + "volume" + volume + 
-        ", cost=" + super.getCost() + 
-        ", name='" + super.getName() + '\'' + '}';
+        return "BotteOfWatter{" + "volume = " + volume + 
+        ", cost = " + super.getCost() + 
+        ", name = '" + super.getName() + '\'' + '}';
     }
-
-
-    
 }
